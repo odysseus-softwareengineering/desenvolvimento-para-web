@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog do Raymundo - Prática de DOM</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .destaque {
+            color: #1565c0;
+            font-weight: bold;
+        }
+
+        .feito {
+            color: #2e7d32;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Meu Blog</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Sobre o blog</h2>
+            <p class="texto">Este é um exercício de manipulação do DOM.</p>
+            <p class="texto">Estamos aprendendo JavaScript moderno.</p>
+        </section>
+
+        <section>
+            <h2>Lista de itens e tarefas</h2>
+            <ul id="lista"></ul>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

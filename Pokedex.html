@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mini Pokédex para pesquisar Pokémon pela PokéAPI.">
+  <title>Mini Pokédex</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Mini Pokédex</h1>
+      <p>Descubra informações sobre seus Pokémon favoritos!</p>
+    </header>
+
+    <form id="formulario">
+      <label for="nome-pokemon">Nome do Pokémon</label>
+
+      <div class="campo-busca">
+        <input
+          type="text"
+          id="nome-pokemon"
+          placeholder="Ex.: pikachu"
+          autocomplete="off"
+          required
+        >
+
+        <button type="submit" id="botao-buscar">
+          Buscar
+        </button>
+      </div>
+    </form>
+
+    <p id="status" role="status" aria-live="polite"></p>
+
+    <section id="resultado" aria-live="polite" hidden>
+      <h2 id="nome-resultado"></h2>
+
+      <img
+        id="imagem-pokemon"
+        src=""
+        alt=""
+        width="200"
+        height="200"
+        hidden
+      >
+
+      <div class="tipos-container">
+        <h3>Tipos</h3>
+        <ul id="tipos-pokemon"></ul>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,152 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background: #f1f4f9;
+  color: #202938;
+}
+
+.container {
+  width: 100%;
+  max-width: 520px;
+  padding: 28px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin-bottom: 8px;
+  color: #dc3545;
+}
+
+header p {
+  color: #5b6472;
+}
+
+form {
+  margin-top: 24px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.campo-busca {
+  display: flex;
+  gap: 8px;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: 2px solid #dc3545;
+  outline-offset: 2px;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #dc3545;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: #b92332;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+#status {
+  min-height: 24px;
+  margin: 18px 0;
+  font-weight: bold;
+}
+
+#resultado {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 12px;
+}
+
+#nome-resultado {
+  margin-top: 0;
+  text-transform: capitalize;
+  color: #26364a;
+}
+
+#imagem-pokemon {
+  display: block;
+  width: 200px;
+  height: 200px;
+  max-width: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+#imagem-pokemon[hidden] {
+  display: none;
+}
+
+.tipos-container h3 {
+  margin-bottom: 10px;
+}
+
+#tipos-pokemon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#tipos-pokemon li {
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: #e2e8f0;
+  color: #26364a;
+  text-transform: capitalize;
+}
+
+@media (max-width: 420px) {
+  .container {
+    padding: 20px;
+  }
+
+  .campo-busca {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}

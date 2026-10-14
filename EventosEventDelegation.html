@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog do Raymundo — JavaScript</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        input, button {
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .destaque {
+            color: #1565c0;
+            font-weight: bold;
+        }
+
+        .feito {
+            color: #2e7d32;
+            text-decoration: line-through;
+        }
+
+        li {
+            cursor: pointer;
+            margin: 5px 0;
+        }
+
+        form {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Blog do Raymundo</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Sobre o blog</h2>
+            <p class="texto">Este é um exercício de manipulação do DOM.</p>
+            <p class="texto">Estamos aprendendo JavaScript moderno.</p>
+        </section>
+
+        <section>
+            <h2>Eventos de botão</h2>
+            <button id="botao" type="button">Clique aqui</button>
+        </section>
+
+        <section>
+            <h2>Evento de teclado</h2>
+            <label for="nome">Digite seu nome:</label>
+            <input id="nome" type="text" placeholder="Seu nome">
+        </section>
+
+        <section>
+            <h2>Lista de tarefas</h2>
+
+            <ul id="lista">
+                <li>Estudar JavaScript</li>
+                <li>Praticar DOM</li>
+                <li>Aprender eventos</li>
+            </ul>
+
+            <form id="formulario">
+                <label for="tarefa">Nova tarefa:</label>
+                <input
+                    id="tarefa"
+                    type="text"
+                    placeholder="Digite uma tarefa"
+                    autocomplete="off"
+                >
+                <button type="submit">Adicionar tarefa</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

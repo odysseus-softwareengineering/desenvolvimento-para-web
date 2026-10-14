@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog sobre The Legend of Zelda: Ocarina of Time, o clássico de Nintendo 64.">
+  <title>Hyrule Chronicles – Blog de Zelda: Ocarina of Time</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      color: #1f2937;
+      background-color: #ecfdf5;
+    }
+
+    header {
+      padding: 24px 16px;
+      text-align: center;
+      color: #fef9c3;
+      background-color: #14532d;
+    }
+
+    header h1 {
+      margin: 0 0 12px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #facc15;
+    }
+
+    main,
+    aside {
+      max-width: 800px;
+      margin: 24px auto;
+      padding: 0 16px;
+    }
+
+    article {
+      margin-bottom: 32px;
+    }
+
+    article img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* ===== Formulário ===== */
+
+    /* 1) Container externo: largura máxima, padding e fundo diferente da página */
+    form {
+      max-width: 520px;
+      margin: 0 auto;
+      padding: 24px;
+      background-color: #ffffff;
+      border: 1px solid #bbf7d0;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(20, 83, 45, 0.15);
+    }
+
+    /* 2) Campos um embaixo do outro */
+    fieldset {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      min-width: 0;
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+
+    legend {
+      padding: 0;
+      margin-bottom: 16px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #14532d;
+    }
+
+    .campo {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      flex: 1;
+      min-width: 180px;
+    }
+
+    /* Bônus: nome e e-mail lado a lado */
+    .linha {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    /* 3) Label, input e select */
+    label {
+      font-size: 0.95rem;
+      font-weight: bold;
+      color: #374151;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 10px 12px;
+      font-size: 1rem;
+      font-family: inherit;
+      border: 1px solid #9ca3af;
+      border-radius: 6px;
+      background-color: #ffffff;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="number"]:focus,
+    select:focus {
+      outline: none;
+      border-color: #16a34a;
+      box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.25);
+    }
+
+    .termos {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .termos label {
+      font-weight: normal;
+    }
+
+    /* 4) Botão de envio */
+    button {
+      padding: 12px 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      font-family: inherit;
+      color: #ffffff;
+      background-color: #16a34a;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #166534;
+    }
+
+    footer {
+      padding: 16px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #dcfce7;
+      background-color: #14532d;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hyrule Chronicles: Ocarina of Time</h1>
+    <nav aria-label="Navegação principal">
+      <a href="#historia">A História</a>
+      <a href="#musicas">As Melodias</a>
+      <a href="#inscricao">Inscreva-se</a>
+    </nav>
+  </header>
+
+  <main>
+    <article id="historia">
+      <h2>A Lenda do Herói do Tempo</h2>
+      <p>
+        Em The Legend of Zelda: Ocarina of Time, lançado em 1998 para o Nintendo 64, Link é um jovem
+        criado entre os Kokiri que descobre ter um destino ligado a Hyrule. Depois de obter a Master Sword,
+        ele fica preso por sete anos e acorda em um futuro dominado por Ganondorf. Cabe a ele viajar entre
+        duas eras, despertar os Sábios e restaurar a paz ao reino ao lado da Princesa Zelda.
+      </p>
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMjYwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjI2MCIgZmlsbD0iIzE0NTMyZCIvPjxwb2x5Z29uIHBvaW50cz0iMjAwLDQwIDE1MCwxMzAgMjUwLDEzMCIgZmlsbD0iI2ZhY2MxNSIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDEzMCAxMDAsMjIwIDIwMCwyMjAiIGZpbGw9IiNmYWNjMTUiLz48cG9seWdvbiBwb2ludHM9IjI1MCwxMzAgMjAwLDIyMCAzMDAsMjIwIiBmaWxsPSIjZmFjYzE1Ii8+PC9zdmc+" alt="Ilustração da Triforce dourada sobre fundo verde" width="400" height="260">
+    </article>
+
+    <article id="musicas">
+      <h2>O Poder das Melodias da Ocarina</h2>
+      <p>
+        A música é parte central da aventura. Com a Ocarina do Tempo, Link aprende canções como a
+        Canção de Zelda, a Canção de Epona e a Canção do Tempo, que abrem portas, invocam a égua Epona e
+        controlam o dia e a noite. Cada melodia é tocada com os botões do controle, e isso faz do jogo uma
+        experiência musical marcante até hoje.
+      </p>
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMjYwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjI2MCIgZmlsbD0iIzFlM2E4YSIvPjxlbGxpcHNlIGN4PSIyMDAiIGN5PSIxNDAiIHJ4PSIxMjAiIHJ5PSI3MCIgZmlsbD0iIzYwYTVmYSIgc3Ryb2tlPSIjZTBmMmZlIiBzdHJva2Utd2lkdGg9IjYiLz48cmVjdCB4PSIxNzAiIHk9IjQ1IiB3aWR0aD0iNjAiIGhlaWdodD0iNDAiIHJ4PSIxMCIgZmlsbD0iIzkzYzVmZCIgc3Ryb2tlPSIjZTBmMmZlIiBzdHJva2Utd2lkdGg9IjYiLz48Y2lyY2xlIGN4PSIxNTAiIGN5PSIxMzAiIHI9IjEwIiBmaWxsPSIjMWUzYThhIi8+PGNpcmNsZSBjeD0iMTg1IiBjeT0iMTE1IiByPSIxMCIgZmlsbD0iIzFlM2E4YSIvPjxjaXJjbGUgY3g9IjIyMCIgY3k9IjExNSIgcj0iMTAiIGZpbGw9IiMxZTNhOGEiLz48Y2lyY2xlIGN4PSIyNTUiIGN5PSIxMzAiIHI9IjEwIiBmaWxsPSIjMWUzYThhIi8+PGNpcmNsZSBjeD0iMjAwIiBjeT0iMTYwIiByPSIxMCIgZmlsbD0iIzFlM2E4YSIvPjwvc3ZnPg==" alt="Ilustração de uma ocarina azul com cinco furos" width="400" height="260">
+    </article>
+  </main>
+
+  <aside id="inscricao">
+    <h2>Receba novidades de Hyrule</h2>
+    <form method="get">
+      <fieldset>
+        <legend>Inscreva-se na newsletter</legend>
+
+        <div class="linha">
+          <div class="campo">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required minlength="3" pattern="[A-Za-zÀ-ÿ ]{3,}" title="Use pelo menos 3 letras (apenas letras e espaços)" placeholder="Ex.: Link">
+          </div>
+
+          <div class="campo">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="voce@exemplo.com">
+          </div>
+        </div>
+
+        <div class="campo">
+          <label for="idade">Idade:</label>
+          <input type="number" id="idade" name="idade" required min="18" max="120" placeholder="18 a 120">
+        </div>
+
+        <div class="campo">
+          <label for="assunto">Assunto de interesse:</label>
+          <select id="assunto" name="assunto" required>
+            <option value="">Selecione um assunto</option>
+            <option value="historia">História e lore</option>
+            <option value="musicas">Músicas e trilha sonora</option>
+            <option value="dicas">Dicas e segredos</option>
+          </select>
+        </div>
+
+        <div class="termos">
+          <input type="checkbox" id="termos" name="termos" value="aceito" required>
+          <label for="termos">Aceito os termos de uso</label>
+        </div>
+
+        <button type="submit">Inscrever-se</button>
+      </fieldset>
+    </form>
+  </aside>
+
+  <footer>
+    <p>&copy; 2026 Hyrule Chronicles – Blog de fãs, sem fins lucrativos. The Legend of Zelda é marca da Nintendo.</p>
+  </footer>
+
+</body>
+</html>
